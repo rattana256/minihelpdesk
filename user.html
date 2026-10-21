@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แจ้งปัญหา</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a href="index.html" class="back-home">←</a>
+
+    <h1>แจ้งปัญหา</h1>
+
+    <form id="ticketForm">
+
+    <div class="form-card">
+
+        <label>ชื่อผู้แจ้ง</label>
+        <input type="text" id="requesterName">
+
+        <label>อีเมลผู้แจ้ง</label>
+        <input type="email" id="requesterEmail">
+
+        <label>หัวข้อปัญหา</label>
+        <input type="text" id="title">
+
+        <label>รายละเอียดปัญหา</label>
+        <textarea id="description"></textarea>
+
+        <label>ประเภทปัญหา</label>
+
+        <select id="issueType">
+            <option>Computer Hardware</option>
+            <option>Software/Application</option>
+            <option>Network/Internet</option>
+            <option>Printer/Scanner</option>
+            <option>Classroom/Lab Room</option>
+            <option>Account/Login</option>
+            <option>Other</option>
+        </select>
+
+        <label>สถานที่</label>
+        <input type="text" id="location">
+
+        <label>ความเร่งด่วน</label>
+
+        <select id="priority">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+            <option>Urgent</option>
+        </select>
+
+        <button type="submit">ส่งแจ้งปัญหา</button>
+
+        <p id="ticketSuccess"></p>
+
+    </div>
+
+</form>
+
+    <hr>
+
+    <h2>Ticket ของฉัน</h2>
+
+    <div id="myTicketList"></div>
+
+    <br>
+
+    <a href="index.html" class="back-home">←</a>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

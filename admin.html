@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Mini Helpdesk</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a href="index.html" class="back-home">←</a>
+
+    <h1>รายการแจ้งปัญหา</h1>
+
+    <a class="home-button" href="issue-type.html">
+        จัดการประเภทปัญหา
+    </a>
+    <h3>Dashboard</h3>
+
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h4>ทั้งหมด</h4>
+            <span id="totalCount">0</span>
+        </div>
+
+        <div class="card">
+            <h4>Open</h4>
+            <span id="openCount">0</span>
+        </div>
+
+        <div class="card">
+            <h4>In Progress</h4>
+            <span id="progressCount">0</span>
+        </div>
+
+        <div class="card">
+            <h4>Resolved</h4>
+            <span id="resolvedCount">0</span>
+        </div>
+
+        <div class="card">
+            <h4>Cancelled</h4>
+            <span id="cancelledCount">0</span>
+        </div>
+
+    </div>
+
+
+
+<div class="summary-container">
+
+    <div class="summary-box">
+
+        <h3>ประเภทปัญหา</h3>
+
+        <div id="issueTypeSummary"></div>
+
+    </div>
+
+    <div class="summary-box">
+
+        <h3>ความเร่งด่วน</h3>
+
+        <div id="prioritySummary"></div>
+
+    </div>
+
+</div>
+<input
+    type="text"
+    id="searchInput"
+    placeholder="ค้นหา Ticket ID, หัวข้อ หรือรายละเอียด"
+>
+
+<div class="filter-container">
+
+    <div class="filter-item">
+        <label>ประเภทปัญหา</label>
+        <select id="issueTypeFilter">
+            <option value="">ทั้งหมด</option>
+            <option value="Computer Hardware">Computer Hardware</option>
+            <option value="Software/Application">Software/Application</option>
+            <option value="Network/Internet">Network/Internet</option>
+            <option value="Printer/Scanner">Printer/Scanner</option>
+            <option value="Classroom/Lab Room">Classroom/Lab Room</option>
+            <option value="Account/Login">Account/Login</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <div class="filter-item">
+        <label>สถานะ</label>
+        <select id="statusFilter">
+            <option value="">ทั้งหมด</option>
+            <option value="Open">Open</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Resolved">Resolved</option>
+            <option value="Cancelled">Cancelled</option>
+        </select>
+    </div>
+
+    <div class="filter-item">
+        <label>ความเร่งด่วน</label>
+        <select id="priorityFilter">
+            <option value="">ทั้งหมด</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Urgent">Urgent</option>
+        </select>
+    </div>
+
+    <div class="filter-item">
+        <label>ผู้รับผิดชอบ</label>
+        <select id="assignedFilter">
+            <option value="">ทั้งหมด</option>
+            <option value="ยังไม่ได้มอบหมาย">ยังไม่ได้มอบหมาย</option>
+            <option value="IT Staff 1">IT Staff 1</option>
+            <option value="IT Staff 2">IT Staff 2</option>
+            <option value="Admin">Admin</option>
+        </select>
+    </div>
+
+</div>
+
+<div id="ticketList"></div>
+
+<br>
+
+<a href="index.html" class="back-home">←</a>
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>

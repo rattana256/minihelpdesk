@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff - รายละเอียด Ticket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>รายละเอียด Ticket</h1>
+
+    <div class="ticket-detail-card">
+        <div id="staffTicketDetail"></div>
+    </div>
+
+    <hr>
+
+    <h3>เปลี่ยนสถานะ</h3>
+
+    <select id="staffStatusSelect">
+        <option value="Open">Open</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Resolved">Resolved</option>
+        <option value="Cancelled">Cancelled</option>
+    </select>
+
+    <button id="staffSaveStatus">
+        บันทึกสถานะ
+    </button>
+
+    <hr>
+
+    <h3>หมายเหตุการแก้ไข</h3>
+
+    <textarea id="staffResolutionNote" rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <button id="staffSaveNote">
+        บันทึกหมายเหตุ
+    </button>
+
+    <br><br>
+
+    <a href="staff.html">
+        กลับไปหน้ารายการ Ticket
+    </a>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

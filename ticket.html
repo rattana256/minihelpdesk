@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียด Ticket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>รายละเอียด Ticket</h1>
+
+    <div id="ticketDetail"></div>
+
+    <hr>
+
+    <h3>เปลี่ยนสถานะ</h3>
+
+    <select id="statusSelect">
+        <option value="Open">Open</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Resolved">Resolved</option>
+        <option value="Cancelled">Cancelled</option>
+    </select>
+
+    <button id="saveStatus">บันทึกสถานะ</button>
+
+    <hr>
+
+    <h3>ผู้รับผิดชอบ</h3>
+
+    <select id="assignedSelect">
+        <option value="">ยังไม่ได้มอบหมาย</option>
+        <option value="IT Staff 1">IT Staff 1</option>
+        <option value="IT Staff 2">IT Staff 2</option>
+        <option value="Admin">Admin</option>
+    </select>
+
+    <button id="saveAssigned">บันทึกผู้รับผิดชอบ</button>
+
+    <hr>
+
+    <h3>หมายเหตุการแก้ไข</h3>
+
+    <textarea id="resolutionNote" rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <button id="saveNote">บันทึกหมายเหตุ</button>
+
+    <br><br>
+
+    <button id="deleteTicket">ลบ Ticket</button>
+
+    <br><br>
+  
+    <a href="admin.html">กลับไปหน้ารายการ Ticket</a>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
